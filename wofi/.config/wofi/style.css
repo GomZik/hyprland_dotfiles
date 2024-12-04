@@ -1,0 +1,50 @@
+* {
+	font-family: "Fira Code Retina", monospace;
+}
+
+#window {
+	background-color: rgba(59, 66, 82, 0.7);
+	border-radius: 3px;
+}
+
+#input {
+	margin: 5px;
+	border-radius: 0px;
+	border: none;
+	background-color: rgba(59, 66, 82, 0.7);
+	color: white;
+	border-radius: 3px;
+}
+
+#inner-box {
+	background-color: rgba(56, 60, 74, 0.7);
+	border-radius: 3px;
+}
+
+#outer-box {
+	margin: 2px;
+	padding: 10px;
+	background-color: rgba(56, 60, 74, 0.7);
+	border-radius: 3px;
+}
+
+#scroll {
+	margin: 5px;
+}
+
+#text {
+	padding: 4px;
+	color: white;
+}
+
+#entry:nth-child(even) {
+	background-color: rgba(64, 69, 82, 0.7);
+}
+
+#entry:selected {
+	background-color: rgba(76, 86, 106, 0.7);
+}
+
+#text:selected {
+	background: transparent;
+}

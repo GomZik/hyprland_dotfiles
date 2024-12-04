@@ -1,0 +1,158 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, DejaVu Sans, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+tooltip {
+    background-color: rgba(46, 52, 64, 0.9);
+}
+
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.0);
+    color: #eceff4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+#workspaces button {
+    margin: 0;
+    background-color: transparent;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    min-width: 4px;
+}
+
+#workspaces button:hover {
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.7;
+}
+
+#workspaces button.active {
+    background-color: transparent;
+    opacity: 1.0;
+}
+
+#workspaces button.urgent {
+    color: #bf616a;
+    opacity: 1.0;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#language,
+#mpd,
+#workspaces,
+#custom-notifications,
+#custom-monitors {
+    padding: 0 10px;
+    border-radius: 8px;
+    background-color: rgba(46, 52, 64, 0.3);
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: rgba(191, 97, 106, 0.1)
+}
+
+#language {
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state>label {
+    padding: 0 5px;
+}
+
+#keyboard-state>label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
